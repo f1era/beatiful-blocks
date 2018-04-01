@@ -1,0 +1,236 @@
+$bor1 : 1px solid black
+
+*
+	margin: 0
+	padding: 0
+
+img
+	padding: 0
+	margin: 0
+	border: none
+
+.albums
+	padding-left: 10px
+	padding-top: 10px
+
+.btns-wrap
+	opacity: 0.8
+	display: none
+	position: fixed
+	bottom: 80px
+	left: 5px
+
+	.btn-go-ahead
+		width: 50px
+		height: 50px
+		background-color: none
+		border: none
+		background-image: url("../img/telega.png")
+		background-size: cover
+
+	.btn-go-ahead:hover
+		cursor: pointer
+
+	.btn-close
+		z-index: 1000
+		width: 50px
+		height: 50px
+		background-color: none
+		border: none
+		background-image: url("../img/close.png")
+		background-size: cover
+
+	.btn-close:hover
+		cursor: pointer
+
+.index_wrap
+	width: 100%
+	height: 100vh
+
+	display: grid
+	grid-template-areas: "header header" "details content"
+	grid-template-columns: 25% 75%
+	grid-template-rows: 50px auto
+
+	.header-wrap
+		grid-area: header
+
+		background-color: #142A3D
+
+		p
+			color: #fff
+			font-family: roboto_regular
+			font-size: 200%
+			padding-left: 12px
+
+
+	.details-wrap
+		position: relative
+		grid-area: details
+
+		overflow: auto
+
+		background-color: #fff
+
+		padding: 8px
+
+		overflow: auto
+
+		.main-info
+
+		hr
+			margin-bottom: 5px
+
+		img
+			width: 70px
+			height: 70px
+			border-radius: 100%
+
+		.spantext1
+			padding-left: 5px
+			position: absolute
+			top: 15px
+			font-family: roboto_bold
+
+		.spantext2
+			position: absolute
+			top: 39px
+			padding-left: 5px
+			font-family: roboto_regular
+			font-size: 90%
+			color: grey
+
+		.spantext2:hover
+			cursor: pointer
+			text-decoration: underline
+		.spantext2:focus
+			cursor: pointer
+
+		.spantext3
+			display: none
+			position: absolute
+			top: 37px
+			right: 20px
+			font-family: roboto_bold
+			color: #000
+
+		.channel-info
+
+			.main
+				font-family: roboto_regular
+
+	.content-wrap
+		grid-area: content
+
+		overflow: auto
+
+		background-color: #F7F4FB
+
+		display: grid
+		grid-template-columns: repeat(auto-fill, 310px)
+		grid-gap: 15px 1fr
+
+		.rap-wrap
+			border-radius: 6px
+
+			margin: 5px
+			height: 100px
+
+			box-shadow: -1px 3px 6px -2px rgba(0,0,0,0.4)
+
+			display: grid
+			grid-template-columns: 100px 1fr
+
+			.img1
+				border-radius: 10px 0 0 6px
+				background-image: url("../img/bones.jpg")
+				background-size: cover
+
+			.img2
+				border-radius: 10px 0 0 6px
+				background-image: url("../img/lone.jpg")
+				background-size: cover
+
+			.img3
+				border-radius: 10px 0 0 6px
+				background-image: url("../img/deads.jpg")
+				background-size: cover
+
+			.img4
+				border-radius: 10px 0 0 6px
+				background-image: url("../img/omen.jpg")
+				background-size: cover
+
+			.img5
+				border-radius: 10px 0 0 6px
+				background-image: url("../img/slava.jpg")
+				background-size: cover
+
+			.img6
+				border-radius: 10px 0 0 6px
+				background-image: url("../img/sborka.jpg")
+				background-size: cover
+
+			.img7
+				border-radius: 10px 0 0 6px
+				background-image: url("../img/rave.jpg")
+				background-size: cover
+
+			.img8
+				border-radius: 10px 0 0 6px
+				background-image: url("../img/sugiwa.jpg")
+				background-size: cover
+
+			.img9
+				border-radius: 10px 0 0 6px
+				background-image: url("../img/pouya.jpg")
+				background-size: cover
+
+			.img10
+				border-radius: 10px 0 0 6px
+				background-image: url("../img/lixan.jpg")
+				background-size: cover
+
+			.text
+				border-radius: 0 6px 6px 0
+				background-color: #fff
+				position: relative
+				//box-shadow: -4px 1px 5px -2px rgba(0,0,0,0.75)
+
+				.spanheader
+					position: absolute
+					top: 20%
+					font-family: roboto_bold
+					font-size: 140%
+					padding: 8px
+
+				.contenttext
+					position: absolute
+					top: 0px
+					font-family: roboto_regular
+					font-size: 80%
+					color: grey
+					padding: 8px
+
+				.btn
+					button
+						border-radius: 0 6px 6px 0
+						border: none
+						position: absolute
+						top: 0
+						right: 0
+						width: 55px
+						height: 100%
+						font-family: roboto_bold
+						font-size: 90%
+						background-color: silver
+
+					button:hover
+						background-color: #000
+						color: #fff
+						cursor: pointer
+
+					button:focus
+						background-color: #000
+						color: #fff
+						cursor: pointer
